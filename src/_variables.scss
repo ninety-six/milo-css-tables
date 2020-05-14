@@ -1,0 +1,28 @@
+// Variables
+// ––––––––––––––––––––––––––––––––––––––––––––––––––
+
+// Colours
+$colors: () !default;
+$colors: map-merge(
+    (
+        "silver":               rgb(221, 221, 221),
+    ),
+    $colors
+);
+
+$generic-margin-bottom:         1.5rem !default;  // used as a starting point for other variables applied to elements
+
+// Borders
+$border-width:                  1px !default;
+$border-color:                  map-get($colors, "silver") !default;
+
+// Tables
+$table-margin-bottom:           $generic-margin-bottom !default;
+$table-background-color:        transparent !default;
+$table-border-width:            $border-width !default;
+$table-border-color:            $border-color !default;
+$table-cell-padding:            .85rem .85rem !default;
+$table-font-size:               90% !default;
+$table-headed-color:            rgb(240, 240, 240) !default;
+$table-hover-color:             rgb(245, 245, 245) !default;
+$table-striped-color:           rgb(250, 250, 250) !default;
